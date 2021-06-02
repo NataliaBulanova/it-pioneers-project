@@ -1,0 +1,66 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #757575;
+  background-color: #ffffff;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.list {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+}
