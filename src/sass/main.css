@@ -7,7 +7,7 @@ body {
   font-family: var(--main-font);
   font-style: normal;
   color: var(--primary-text-color);
-  background-color: lightcoral;
+  background-color: var(--primary-bg-color);
 }
 
 body.modal-open {
@@ -160,6 +160,10 @@ img {
 
 .btn--light:hover, .btn--light:focus {
   background-color: var(--light-btn-hover);
+}
+
+.about {
+  background-color: var(--secondary-bg-color);
 }
 
 .about_title {
