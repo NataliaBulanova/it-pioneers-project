@@ -5,7 +5,11 @@
 <path fill="none" style="stroke: stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
 <path fill="none" style="stroke: stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
 </symbol>
+<symbol id="arrow" viewBox="0 0 32 32">
+<path d="M0,31.47H58.44V9.32c.16-3.71,1.39-6.35,3.7-7.88C68.33-2.69,74.45,3,78.76,6.87,90.94,17.92,113,43.05,119.44,48.53c4.59,4.15,4.59,10.06,0,14.21-6.61,5.66-30,32.16-41.85,42.71-4.12,3.66-9.74,8.18-15.45,4.37-2.31-1.52-3.54-4.16-3.7-7.87V79.79H0V31.47Z"></path>
+</symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
 <path fill="none" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
 </symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32">
