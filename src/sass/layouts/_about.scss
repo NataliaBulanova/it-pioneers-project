@@ -1,0 +1,19 @@
+.about_title {
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 6%;
+  color: var(--dark-accent-color);
+}
+.about_label {
+  display: block;
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 4%;
+  color: var(--light-accent-color);
+}
