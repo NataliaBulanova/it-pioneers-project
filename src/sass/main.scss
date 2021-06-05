@@ -4,7 +4,7 @@
  */
 
 @import './base/common';
-
+@import './base/container';
 @import './utils/variables';
 @import './utils/placeholders';
 
@@ -12,7 +12,6 @@
 @import './layouts/hero';
 @import './layouts/products';
 @import './layouts/about';
-@import './layouts/modal_about';
 @import './layouts/advantages';
 @import './layouts/gallery';
 @import './layouts/review';
