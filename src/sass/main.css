@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  color: var(--primary-text-color);
+  background-color: lightcoral;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --accent-font: 'Titan One', sans-serif;
+  --accent-bg-color: #ffb8ca;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #fff5f6;
+  --white-text-color: #ffffff;
+  --dark-accent-color: #d41443;
+  --light-accent-color: #ffa5ba;
+  --primary-text-color: #000000;
+  --secondary-text-color: #907e82;
+  --socials-icon-color: #fea5bb;
+  --dark-btn-hover: #d41342;
+  --light-btn-hover: #ecebeb;
+  --card-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  --btn-radius: 22px;
+  --card-radius: 24px;
+  --card-label-radius: 6px;
+  --coffee-color: #f0d1a5;
+  --pistachio-color: #c2e297;
+  --pseudo-color: #e1e1e1;
+  --menu-border-color: #e18298;
+  --menu-bg-color: #e17992;
+  --transition-param: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-tr-param: 250ms cubic-bezier(0.17, 0.67, 0.96, 0.48);
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 44px;
+  padding-right: 37px;
+  padding-left: 37px;
+  border: 1px solid transparent;
+  border-radius: var(--btn-radius);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+  -webkit-transition: var(--transition-param);
+  transition: var(--transition-param);
+}
+
+.btn--dark {
+  color: var(--white-text-color);
+  background-color: var(--dark-accent-color);
+}
+
+.btn--dark:hover, .btn--dark:focus {
+  background-color: var(--dark-btn-hover);
+}
+
+.btn--light {
+  color: var(--dark-accent-color);
+  background-color: var(--white-text-color);
+}
+
+.btn--light:hover, .btn--light:focus {
+  background-color: var(--light-btn-hover);
+}
+
+.about_title {
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-size: 58px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 6%;
+  color: var(--dark-accent-color);
+}
+
+.about_label {
+  display: block;
+  font-family: var(--accent-font);
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 4%;
+  color: var(--light-accent-color);
+}
+/*# sourceMappingURL=main.css.map */
