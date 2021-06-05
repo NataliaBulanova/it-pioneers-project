@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://nataliabulanova.github.io/it-pioneers-project",
+  "homepage": "https://NataliaBulanova.github.io/it-pioneers-project",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /it-pioneers-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NataliaBulanova/it-pioneers-project.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
