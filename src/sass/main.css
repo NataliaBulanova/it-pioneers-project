@@ -4,12 +4,10 @@
  * Все паршалы подключаются сюда.
  */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: #757575;
-  background-color: #ffffff;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
 }
 
 body.modal-open {
@@ -31,6 +29,17 @@ ul,
 p {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
 }
 
 button {
@@ -55,19 +64,60 @@ img {
   overflow: hidden;
 }
 
-.list {
-  list-style-type: none;
+.container {
+  width: 100%;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.link:focus, .link:hover {
-  color: #2196f3;
-  fill: #2196f3;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+:root {
+  --main-font: 'DM Sans', sans-serif;
+  --accent-font: 'Titan One', sans-serif;
+  --accent-bg-color: #ffb8ca;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #fff5f6;
+  --white-text-color: #ffffff;
+  --dark-accent-color: #d41443;
+  --light-accent-color: #ffa5ba;
+  --primary-text-color: #000000;
+  --secondary-text-color: #907e82;
+  --socials-icon-color: #fea5bb;
+  --dark-btn-hover: #d41342;
+  --light-btn-hover: #ecebeb;
+  --card-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  --btn-radius: 22px;
+  --card-radius: 24px;
+  --card-label-radius: 6px;
+  --coffee-color: #f0d1a5;
+  --pistachio-color: #c2e297;
+  --pseudo-color: #e1e1e1;
+  --menu-border-color: #e18298;
+  --menu-bg-color: #e17992;
+  --transition-param: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-tr-param: 250ms cubic-bezier(0.17, 0.67, 0.96, 0.48);
 }
 /*# sourceMappingURL=main.css.map */
