@@ -3,8 +3,14 @@
   padding-bottom: 100px;
 }
 
+.products__set {
+  display: flex;
+  justify-content: center;
+}
+
 .products__card-1 {
   flex-basis: 100%;
+  justify-content: center;
   text-align: center;
   background-color: var(--accent-bg-color);
   border-radius: var(--card-radius);
@@ -78,6 +84,11 @@
   letter-spacing: 0.04em;
   color: var(--white-text-color);
   text-transform: uppercase;
+  margin-top: 160px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    margin-top: 150px;
+  }
 }
 
 .products__item {

@@ -1,6 +1,12 @@
 .card-set {
+  margin: -10px;
+
   @media screen and (min-width: 320px) and (max-width: 767.98px) {
     flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: -15px;
   }
 }
 
