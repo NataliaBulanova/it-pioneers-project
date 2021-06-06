@@ -6,39 +6,67 @@
 .products__card-1 {
   flex-basis: 100%;
   text-align: center;
-  width: 280px;
-  height: 485px;
   background-color: var(--accent-bg-color);
   border-radius: var(--card-radius);
+
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    height: 485px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 525px;
+  }
 }
 
 .products__card-2 {
   flex-basis: 100%;
   text-align: center;
-  width: 280px;
-  height: 485px;
   background-color: var(--coffee-color);
   border-radius: var(--card-radius);
+
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    height: 485px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 525px;
+  }
 }
 
 .products__card-3 {
   flex-basis: 100%;
   text-align: center;
-  width: 280px;
-  height: 485px;
   background-color: var(--pistachio-color);
   border-radius: var(--card-radius);
-}
 
-.products__title {
-  font-family: var(--accent-font);
-  font-weight: normal;
-  font-size: 34px;
-  height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--dark-accent-color);
-  text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    width: 280px;
+    height: 485px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 525px;
+  }
 }
 
 .products__title-assorti {
@@ -56,7 +84,7 @@
   font-family: var(--main-font);
   font-weight: bold;
   font-size: 14px;
-  line-height: 1, 5;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--white-text-color);
