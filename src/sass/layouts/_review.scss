@@ -1,0 +1,109 @@
+// .review {
+//   padding: 120px 38px;
+//   background-color: var(--primary-bg-color);
+
+//   @media screen and (min-width: 768px) {
+//     padding: 120px 38px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     padding: 120px 38px;
+//   }
+// }
+.review__container {
+  padding: 80px 20px 86px 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 123px 177px 132px 177px;
+  }
+}
+
+.review__text-box {
+  z-index: 2;
+  background-color: #fafafa;
+  padding: 47px 50px 30px 50px;
+
+  @media screen and (min-width: 768px) {
+    padding: 47px 36px 14px 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 47px 54px 14px 59px;
+  }
+}
+
+.review__img {
+  margin-bottom: 66px;
+}
+.review__text {
+  position: relative;
+  padding: 0px 16px 20px 7px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 30px,
+    var(--pseudo-color) 30px,
+    var(--pseudo-color) 31px // #fafafa 31px,
+  );
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(../images/“.png);
+    width: 54px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    transform: translate(-20%, -40%);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 45px 10px 20px;
+    font-size: 14px;
+    line-height: 2.16;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0px 35px 16px 28px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+
+.review__customer {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+
+  &::before {
+    content: '...';
+    display: block;
+    font-size: 30px;
+    letter-spacing: 0.5em;
+    margin: 0px auto 0px auto;
+    color: var(--dark-accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
