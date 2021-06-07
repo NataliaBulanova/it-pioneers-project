@@ -24,31 +24,27 @@
 
   &::before {
     position: absolute;
+    bottom: 50%;
+    left: 16px;
+    transform: translateY(-50%);
     content: '';
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/mobile/product-1.png);
 
-    @media screen and (min-width: 320px) {
-      width: 250px;
-      height: 250px;
-      background-image: url(../images/mobile/product-1.png);
-      top: -17%;
-      left: 9%;
-    }
     @media screen and (min-width: 768px) {
+      left: 0%;
       width: 220px;
       height: 225px;
       background-image: url(../images/tablet/product-1.png);
-      top: -15%;
-      left: 5%;
     }
     @media screen and (min-width: 1280px) {
       width: 335px;
       height: 335px;
       background-image: url(../images/desktop/product-1.png);
-      top: -28%;
-      left: -8%;
     }
   }
 
@@ -79,31 +75,27 @@
 
   &::before {
     position: absolute;
+    bottom: 50%;
+    left: 16px;
+    transform: translateY(-50%);
     content: '';
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/mobile/product-2.png);
 
-    @media screen and (min-width: 320px) {
-      width: 250px;
-      height: 250px;
-      background-image: url(../images/mobile/product-2.png);
-      top: -17%;
-      left: 9%;
-    }
     @media screen and (min-width: 768px) {
+      left: 0%;
       width: 220px;
       height: 225px;
       background-image: url(../images/tablet/product-2.png);
-      top: -15%;
-      left: 5%;
     }
     @media screen and (min-width: 1280px) {
       width: 335px;
       height: 335px;
       background-image: url(../images/desktop/product-2.png);
-      top: -28%;
-      left: -8%;
     }
   }
 
@@ -124,6 +116,9 @@
 }
 
 .products__card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: relative;
   flex-basis: 100%;
   text-align: center;
@@ -133,31 +128,27 @@
 
   &::before {
     position: absolute;
+    bottom: 50%;
+    left: 16px;
+    transform: translateY(-50%);
     content: '';
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
+    width: 250px;
+    height: 250px;
+    background-image: url(../images/mobile/product-3.png);
 
-    @media screen and (min-width: 320px) {
-      width: 250px;
-      height: 250px;
-      background-image: url(../images/mobile/product-3.png);
-      top: -17%;
-      left: 9%;
-    }
     @media screen and (min-width: 768px) {
       width: 220px;
+      left: 0%;
       height: 225px;
       background-image: url(../images/tablet/product-3.png);
-      top: -15%;
-      left: 5%;
     }
     @media screen and (min-width: 1280px) {
       width: 335px;
       height: 335px;
       background-image: url(../images/desktop/product-3.png);
-      top: -28%;
-      left: -8%;
     }
   }
 
