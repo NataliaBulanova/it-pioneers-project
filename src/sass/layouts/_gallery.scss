@@ -1,0 +1,164 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    var(--secondary-bg-color) 40%,
+    var(--white-text-color) 40%
+  );
+}
+
+.gallery__envelope {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -2px;
+  margin-top: -2px;
+
+  @media screen and (max-width: 420px) {
+    & {
+      flex-wrap: nowrap;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      margin-left: -4px;
+      margin-top: -4px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: -6px;
+      margin-top: -6px;
+    }
+  }
+}
+
+.gallery__column {
+  margin-left: 2px;
+  margin-top: 2px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-left: 4px;
+      margin-top: 4px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: 6px;
+      margin-top: 6px;
+    }
+  }
+}
+
+.gallery__column--shift1 {
+  padding-top: 28px;
+  align-self: flex-start;
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 61px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 100px;
+    }
+  }
+}
+
+.gallery__column--shift2 {
+  padding-top: 15px;
+  align-self: flex-start;
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 33px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 53px;
+    }
+  }
+}
+
+.gallery__column--shift3 {
+  padding-top: 43px;
+  align-self: flex-start;
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 94px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 153px;
+    }
+  }
+}
+
+.gallery__item {
+  width: 100%;
+  max-width: 40px;
+  margin-bottom: 2px;
+  border-radius: 17%;
+  overflow: hidden;
+  transition: transform var(--transition-param);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 20px 10px rgba(255, 184, 202, 0.6);
+    transform: rotate(350deg) scale(1.5);
+
+    //   350 Поставил специально, так кажется симпотичнее
+    //   И тень тоже с потолка)))
+  }
+
+  @media screen and (max-width: 420px) {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 4px;
+      max-width: 85px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-bottom: 6px;
+      max-width: 138px;
+    }
+  }
+}
+
+.gallery__item--big-size {
+  max-width: 80px;
+
+  @media screen and (max-width: 420px) {
+    & {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      max-width: 174px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      max-width: 284px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .gallery__item--norm-size {
+    max-width: 50%;
+  }
+}
