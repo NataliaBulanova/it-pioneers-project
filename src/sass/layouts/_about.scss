@@ -1,12 +1,6 @@
 .about {
-  width: 100vh;
   background-color: var(--secondary-bg-color);
   padding-top: 125px;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 130px;
-    padding-bottom: 66px;
-  }
 
   @media screen and (min-width: 320px) and (max-width: 467px) {
     background-position: 0px 650px;
@@ -15,12 +9,20 @@
     background-repeat: no-repeat;
     padding-bottom: 39px;
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 39px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
   @media screen and (min-width: 1280px) {
     background-position: 0px 350px;
     background-size: 100%;
     background-image: url(/images/desktop/about-bg.png), url(/images/desktop/about-bg@2x.png);
     background-repeat: no-repeat;
-    padding-bottom: 146px;
+    padding-bottom: 39px;
+    padding-top: 125px;
   }
 }
 
@@ -34,38 +36,40 @@
 
   @media screen and (min-width: 320px) {
     margin-top: 26px;
+    min-width: 280px;
   }
   @media screen and (min-width: 768px) {
     margin-right: 17px;
     margin-top: 50px;
+    min-width: 340px;
   }
   @media screen and (min-width: 1280px) {
     margin-right: 74px;
     margin-top: 55px;
+    min-width: 516px;
   }
 }
 .about_flex {
   display: flex;
+
   @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
+    // padding-left: 50px;
+    // padding-right: 50px;
   }
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    // padding-left: 17px;
+    // padding-right: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    // padding-left: 112px;
+    // padding-right: 117px;
   }
 }
 .about_title-flex {
   display: block;
-
-  @media screen and (min-width: 320px) {
-    max-width: 220px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 340px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 463px;
-  }
 }
 .about_info-top {
   font-family: var(--main-font);
@@ -110,5 +114,10 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 45px;
     margin-top: 35px;
+  }
+}
+.container {
+  @media screen and (max-width: 467px) {
+    width: 100%;
   }
 }
