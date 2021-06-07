@@ -2,7 +2,7 @@
   background-color: var(--secondary-bg-color);
   padding-top: 125px;
 
-  @media screen and (min-width: 320px) and (max-width: 467px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     background-position: 0px 650px;
     background-size: 100%;
     background-image: url(/images/mobile/about-bg.png), url(/images/mobile/about-bg@2x.png);
