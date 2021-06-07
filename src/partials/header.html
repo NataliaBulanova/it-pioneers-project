@@ -1,1 +1,58 @@
-
+<header class="header">
+  <div class="container moe">
+    <div class="container list mob__list">
+      <a class="header__logo link" href=""><img src="./images/logo.png" alt="logo" /></a>
+      <!--<span class="header__web">Web</span>Studio  -->
+      <button
+        class="mob__btn link"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu__cotainer"
+      >
+        <!-- data-menu-button -->
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon__close" href="./images/defs.svg#icon-close_40"></use>
+          <use class="icon__menu" href="./images/defs.svg#icon-menu_40"></use>
+        </svg>
+        <!--  /sprite.svg#icon-for-btn/sprite.svg#icon-closeicon-close-->
+      </button>
+      <div class="menu__cotainer" id="menu__cotainer">
+        <!--   data-menu-->
+        <button class="header__button" type="button">
+          <!--   data1-modal-open-->
+          Buy now
+          <svg class="header__icon">
+            <use class="icon__btn" href="./images/icons-sprite.svg#icon-next"></use>
+            <!--  width="16" height="18" ./images/symbol-defs.svg#icon-close_40-->
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__list" id="select-anchor">
+            <li class="header__item">
+              <a class="header__link primary" href="">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#">About us</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#">How it’s made?</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#">Our products</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="header-tab__button" type="button" data-modal-open>
+        Buy now
+        <svg class="header-tab__icon">
+          <use class="icon__btn" href="./images/icons-sprite.svg#icon-next"></use>
+          <!--  width="16" height="18" ./images/symbol-defs.svg#icon-close_40-->
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
