@@ -24,7 +24,6 @@
 }
 
 .review__text-box {
-  z-index: 2;
   background-color: #fafafa;
   padding: 47px 50px 30px 50px;
 
@@ -60,11 +59,10 @@
   &::before {
     content: '';
     display: block;
-    background-image: url(../images/“.png);
+    background-image: url(../images/“.svg);
     width: 54px;
     height: 40px;
     position: absolute;
-    z-index: 1;
     top: 0px;
     left: 0px;
     transform: translate(-20%, -40%);
