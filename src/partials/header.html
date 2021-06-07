@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container moe">
+  <div class="container header__container">
     <div class="container list mob__list">
       <a class="header__logo link" href=""><img src="./images/logo.png" alt="logo" /></a>
       <!--<span class="header__web">Web</span>Studio  -->
@@ -8,18 +8,19 @@
         type="button"
         aria-expanded="false"
         aria-controls="menu__cotainer"
+        data-menu-button
       >
-        <!-- data-menu-button -->
+        <!--  -->
         <svg width="40" height="40" aria-label="Переключатель мобильного меню">
           <use class="icon__close" href="./images/defs.svg#icon-close_40"></use>
           <use class="icon__menu" href="./images/defs.svg#icon-menu_40"></use>
         </svg>
         <!--  /sprite.svg#icon-for-btn/sprite.svg#icon-closeicon-close-->
       </button>
-      <div class="menu__cotainer" id="menu__cotainer">
-        <!--   data-menu-->
-        <button class="header__button" type="button">
-          <!--   data1-modal-open-->
+      <div class="menu__cotainer" id="menu__cotainer" data-menu>
+        <!--  -->
+        <button class="header__button" type="button" data1-modal-open>
+          <!--  -->
           Buy now
           <svg class="header__icon">
             <use class="icon__btn" href="./images/icons-sprite.svg#icon-next"></use>

@@ -2,7 +2,7 @@
   position: relative;
   // border-bottom: 1px solid $color-FFB8CA;
 }
-.moe {
+.header__container {
   position: relative;
 }
 .mob__list {
@@ -11,8 +11,11 @@
   left: 0;
   display: flex;
   align-items: center;
-  margin-top: 35px;
+  margin-top: 5px;
   z-index: 3;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
   @media screen and (min-width: 1280px) {
     justify-content: space-between;
   }
@@ -157,7 +160,7 @@
     // width: 100%;
     // background-color: $color-ffffff;
     background-color: var(--menu-bg-color);
-    transform: translateX(100%);
+    transform: translateX(120%);
     transition: transform var(--transition-param);
 
     &.is-open {
