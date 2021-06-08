@@ -267,7 +267,7 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: #212121;
+  color: var(--dark-btn-hover);
 }
 .modal__res {
   display: flex;
@@ -306,7 +306,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: var(--dark-btn-hover);
 }
 .modal__input {
   padding-left: 42px;
@@ -332,6 +332,7 @@
   margin-left: 15px;
   transform: translateY(50%);
   transition: fill var(--menu-border-color);
+  fill: var(--dark-btn-hover);
 }
 .modal__text {
   padding: 12px 16px;
@@ -358,7 +359,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--dark-btn-hover);
 }
 .checkbox {
   // position: absolute;
@@ -374,7 +375,7 @@
   margin-right: 8px;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--menu-border-color);
+  border: 2px solid var(--dark-btn-hover);
   border-radius: 2px;
   transition: border-color var(--transition-param), background-color var(--transition-param);
 
@@ -403,12 +404,15 @@
   transition: background-color var(--transition-param);
 
   &:hover {
-    background-color: var(--pistachio-color);
+    background-color: var(--dark-btn-hover);
   }
 }
 .modal__contract {
   // margin-left: 2px;
-  color: var(--coffee-color);
+  color: var(--light-accent-color);
+  &:hover {
+    color: var(--dark-btn-hover);
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
