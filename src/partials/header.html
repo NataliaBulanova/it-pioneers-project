@@ -1,1 +1,118 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="container list mob__list">
+      <a class="header__logo link" href=""><img src="./images/logo.png" alt="logo" /></a>
+      <!--<span class="header__web">Web</span>Studio  -->
+      <button
+        class="mob__btn link"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu__cotainer"
+        data-menu-button
+      >
+        <!--  -->
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon__close" href="./images/defs.svg#icon-close_40"></use>
+          <use class="icon__menu" href="./images/defs.svg#icon-menu_40"></use>
+        </svg>
+        <!--  /sprite.svg#icon-for-btn/sprite.svg#icon-closeicon-close-->
+      </button>
+      <div class="menu__cotainer" id="menu__cotainer" data-menu>
+        <!--  -->
+        <button class="header__button" type="button" data1-modal-open>
+          <!--  -->
+          Buy now
+          <svg class="header__icon">
+            <use class="icon__btn" href="./images/icons-sprite.svg#icon-next"></use>
+            <!--  width="16" height="18" ./images/symbol-defs.svg#icon-close_40-->
+          </svg>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__list" id="select-anchor">
+            <li class="header__item">
+              <a class="header__link primary" href="#hero">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#gallery">About us</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#about">How it’s made?</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#products">Our products</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="header-tab__button" type="button" data-modal-open>
+        Buy now
+        <svg class="header-tab__icon">
+          <use class="icon__btn" href="./images/icons-sprite.svg#icon-next"></use>
+          <!--  width="16" height="18" ./images/symbol-defs.svg#icon-close_40-->
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+<section class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <h2 class="visually-hidden">Modal</h2>
+    <!-- <div class="modal__conteiner"> -->
+    <p class="modal__heiding">Оставьте свои данные, мы вам перезвоним</p>
+    <button class="modal__res" data-modal-close>
+      <svg class="" width="30" height="30">
+        <use href="./images/defs.svg#icon-close_40"></use>
+      </svg>
+    </button>
+    <form>
+      <label class="modal__label" for="name">Имя</label>
+      <div class="modal__item">
+        <input class="modal__input" type="text" name="name" id="name" autocomplete="off" />
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/defs.svg#icon-person"></use>
+        </svg>
+      </div>
+      <label class="modal__label" for="tel">Телефон</label>
+      <div class="modal__item">
+        <input class="modal__input" type="tel" name="tel" id="tel" autocomplete="off" />
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/defs.svg#icon-tel"></use>
+        </svg>
+      </div>
+      <label class="modal__label" for="mail">Почта</label>
+      <div class="modal__item">
+        <input class="modal__input" type="email" name="mail" id="mail" autocomplete="off" />
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/defs.svg#icon-email"></use>
+        </svg>
+      </div>
 
+      <div class="modal__item modal__point">
+        <label class="modal__label" for="comment">Комментарий</label>
+        <textarea
+          class="modal__input modal__text"
+          name="comment"
+          id="comment"
+          rows="8"
+          placeholder="Введитe текст"
+        ></textarea>
+      </div>
+    </form>
+    <div class="modal__agree">
+      <label class="modal__lab" for="agree">
+        <input class="checkbox" type="checkbox" name="agree" id="agree" />
+        <span class="modal__checkbox"></span>
+        <div>
+          Соглашаюсь с рассылкой и принимаю <a class="modal__contract" href="">Условия договора</a>
+        </div>
+      </label>
+    </div>
+    <!-- <div class="modal__submit"> -->
+    <button class="modal__btn" type="submit">Отправить</button>
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</section>
