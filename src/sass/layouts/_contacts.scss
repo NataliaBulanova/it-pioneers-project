@@ -25,23 +25,36 @@
 }
 
 .contacts-button--dark {
+  margin-left: 13px;
   width: 10px;
   height: 15px;
   fill: var(--dark-accent-color);
 }
 .contacts-button--light {
+  margin-left: 13px;
   width: 10px;
   height: 15px;
   fill: var(--white-text-color);
 }
 
 .contacts-button {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .contacts-button__btn {
-  margin-right: 15px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .contacts-set {
@@ -50,7 +63,7 @@
   margin: -10px;
   margin-bottom: 54px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 81px;
   }
   @media screen and (min-width: 1280px) {
