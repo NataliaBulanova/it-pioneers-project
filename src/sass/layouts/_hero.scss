@@ -222,6 +222,20 @@
   height: 15px;
   fill: #c7133e;
 }
+.hero__button-text{
+  padding: 0 18px 0 30px;
+  font-size: 8px;
+  line-height: 150%;
+  color: var(--primary-bg-color);
+  background-color: var(--accent-bg-color);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
 .franchising {
   position: absolute;
   z-index: 2;
