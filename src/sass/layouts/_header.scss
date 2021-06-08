@@ -216,7 +216,12 @@
     margin-left: 35px;
     margin-top: 0;
   }
-
+  .header__link {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
+  }
   .header-tab__button {
     // display: none;
     margin-left: 0;
