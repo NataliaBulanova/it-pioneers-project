@@ -24,6 +24,7 @@
     margin-top: 260px;
   }
 }
+
 .products__card {
   flex-basis: 100%;
   display: flex;
@@ -32,18 +33,24 @@
   text-align: center;
   max-width: 280px;
   padding: 161px 40px 40px 40px;
-  margin-bottom: 130px;
   border-radius: var(--card-radius);
+
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 3 * 20px) / 3);
     padding: 163px 11px 40px 11px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
     padding: 163px 44px 40px 44px;
-    min-width: 330px;
+    min-width: 335px;
     margin-bottom: 0;
   }
 }
@@ -54,7 +61,7 @@
 
   &::before {
     position: absolute;
-    bottom: 70%;
+    bottom: 71%;
     left: 16px;
     content: '';
     display: inline-block;
@@ -65,13 +72,13 @@
     background-image: url(../images/mobile/product-1.png);
 
     @media screen and (min-width: 768px) {
-      bottom: 75%;
+      bottom: 77%;
       left: 0%;
       width: 220px;
       height: 225px;
       background-image: url(../images/tablet/product-1.png);
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       left: 0%;
       width: 335px;
       height: 335px;
@@ -86,7 +93,7 @@
 
   &::before {
     position: absolute;
-    bottom: 70%;
+    bottom: 71%;
     left: 16px;
     content: '';
     display: inline-block;
@@ -97,13 +104,13 @@
     background-image: url(../images/mobile/product-2.png);
 
     @media screen and (min-width: 768px) {
-      bottom: 75%;
+      bottom: 77%;
       left: 0%;
       width: 220px;
       height: 225px;
       background-image: url(../images/tablet/product-2.png);
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 335px;
       height: 335px;
       background-image: url(../images/desktop/product-2.png);
@@ -117,7 +124,7 @@
 
   &::before {
     position: absolute;
-    bottom: 70%;
+    bottom: 71%;
     left: 16px;
     content: '';
     display: inline-block;
@@ -129,12 +136,12 @@
 
     @media screen and (min-width: 768px) {
       width: 220px;
-      bottom: 75%;
+      bottom: 77%;
       left: 0%;
       height: 225px;
       background-image: url(../images/tablet/product-3.png);
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 335px;
       height: 335px;
       background-image: url(../images/desktop/product-3.png);
