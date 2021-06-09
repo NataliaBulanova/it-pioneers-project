@@ -221,9 +221,12 @@
   }
 }
 .small-button-arrow {
-  width: 10px;
-  height: 15px;
-  fill: #c7133e; 
+  width: 8px;
+  height: 18px;
+  @media screen and (min-width: 1200px) {
+  width: 11px;
+  height: 26px;
+  fill: #c7133e; }
 }
 .hero__button-text {
   padding: 0 18px 0 30px;
