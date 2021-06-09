@@ -29,6 +29,7 @@
 }
 .review__text {
   position: relative;
+  z-index: 2;
   padding: 5px 16px 20px 7px;
   font-weight: 500;
   font-size: 12px;
@@ -50,6 +51,7 @@
     width: 54px;
     height: 40px;
     position: absolute;
+    z-index: -2;
     top: 0px;
     left: 0px;
     transform: translate(-20%, -40%);
