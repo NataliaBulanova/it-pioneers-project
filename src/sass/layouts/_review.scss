@@ -12,7 +12,7 @@
 }
 
 .review__text-box {
-  background-color: #fafafa;
+  background-color: var(--slide-text-color);
   padding: 47px 50px 30px 50px;
 
   @media screen and (min-width: 768px) {
@@ -29,19 +29,18 @@
 }
 .review__text {
   position: relative;
-  padding: 0px 16px 20px 7px;
+  padding: 5px 16px 20px 7px;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
   letter-spacing: 0.04em;
-
   background-image: repeating-linear-gradient(
     to bottom,
-    #fafafa,
-    #fafafa 30px,
+    var(--slide-text-color),
+    var(--slide-text-color) 30px,
     var(--pseudo-color) 30px,
-    var(--pseudo-color) 31px // #fafafa 31px,
+    var(--pseudo-color) 31px // var(--slide-text-color) 31px,
   );
 
   &::before {
