@@ -54,7 +54,15 @@
     z-index: -2;
     top: 0px;
     left: 0px;
-    transform: translate(-20%, -40%);
+    transform: translate(-27%, -30%);
+
+    @media screen and(min-width: 768px) {
+      transform: translate(-25%, -37%);
+    }
+
+    @media screen and(min-width: 768px) {
+      transform: translate(-12%, -40%);
+    }
   }
 
   @media screen and (min-width: 768px) {
