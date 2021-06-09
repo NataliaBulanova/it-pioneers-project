@@ -9,11 +9,11 @@
   @media screen and(min-width: 1280px) {
     position: relative;
 
-    &::after {
+    &::before {
       content: '';
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 50%;
       left: 0;
       top: 130px;
       background-image: url(/images/desktop/contacts-bg.png),

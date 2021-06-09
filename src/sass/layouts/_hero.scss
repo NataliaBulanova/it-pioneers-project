@@ -145,28 +145,28 @@
 }
 .dark-button {
   width: 62px;
-  color: #fff;
-  background: #d41443;
+  color: var(--white-text-color);
+  background: var(--dark-accent-color);
   @media screen and (min-width: 1200px) {
     width: 104px;
   }
 }
 .light-button {
   width: 83px;
-  color: #d41443;
-  background: #fff;
+  color: var(--dark-accent-color);
+  background: var(--primary-bg-color);
   @media screen and (min-width: 1200px) {
     width: 138px;
   }
 }
 .dark-button:hover,
 .dark-button:focus {
-  background: #c7133e;
+  background: var(--dark-btn-hover);
   cursor: pointer;
 }
 .light-button:hover,
 .light-button:focus {
-  background: #ecebeb;
+  background: var(--light-btn-hover);
   cursor: pointer;
 }
 .hero__description {
@@ -223,10 +223,12 @@
 .small-button-arrow {
   width: 8px;
   height: 18px;
+  fill: var(--dark-btn-hover);
+
   @media screen and (min-width: 1200px) {
-  width: 11px;
-  height: 26px;
-  fill: #c7133e; }
+    width: 11px;
+    height: 26px;
+  }
 }
 .hero__button-text {
   padding: 0 18px 0 30px;
@@ -288,7 +290,7 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--dark-accent-color);
 
   @media screen and (min-width: 1200px) {
     font-size: 46px;
@@ -301,7 +303,7 @@
   right: -62px;
   width: 345px;
   height: 345px;
-  background: #ffa5ba;
+  background: var(--light-accent-color);
   border-radius: 50%;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
