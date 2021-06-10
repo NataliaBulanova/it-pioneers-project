@@ -230,18 +230,19 @@
 
 /* Модальное окно */
 .backdrop {
-  display: block;
+  // display: block;
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: auto;
   min-width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  visibility: visible;
+  // visibility: visible;
   transition: opacity var(--modal-tr-param), visibility var(--modal-tr-param);
   opacity: 1;
   z-index: 5;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -252,18 +253,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: 93px auto;
+  margin: 0px auto;
   transform: translate(-50%, -50%);
-  min-width: 90%;
-  // min-height: 581px;
+  width: 100%;
   padding: 40px;
+  max-width: 530px;
+  max-height: 100vh;
+  // overflow-y: auto;
   background-color: var(--menu-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: var(--card-radius);
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    min-width: auto;
+  @media screen and (max-width: 767.98px) {
+    border-radius: 5px;
   }
 }
 .modal__heiding {
@@ -291,6 +293,7 @@
   background-color: var(--primary-bg-color);
   fill: var(--dark-accent-color);
   transition: fill var(--modal-tr-param);
+  cursor: pointer;
 
   &:focus,
   &:hover {
@@ -302,7 +305,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  position: relative;
+  // position: relative;
 }
 .modal__point {
   margin-bottom: 20px;
@@ -424,13 +427,13 @@
 }
 @media screen and (min-width: 768px) {
   .modal {
-    margin: 205px auto;
+    margin: 30px auto;
   }
 }
 @media screen and (min-width: 1280px) {
   .modal {
     width: 528px;
-    margin: 220px auto;
+    margin: 50px auto;
   }
   .modal__heiding {
     line-height: 1.15;

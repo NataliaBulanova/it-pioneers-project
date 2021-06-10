@@ -71,7 +71,6 @@
   }
 }
 .hero__title {
-  margin: 0;
   padding-top: 193px;
   padding-left: 20px;
   font-family: var(--accent-font);
@@ -81,7 +80,7 @@
   line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: var(--white-text-color);
   @media screen and (min-width: 768px) {
     padding-top: 102px;
