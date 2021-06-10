@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -11,10 +10,6 @@ body {
   background-color: var(--primary-bg-color);
 
   &.modal-open {
-    overflow: hidden;
-  }
-
-  &.modal-open-map {
     overflow: hidden;
   }
 }

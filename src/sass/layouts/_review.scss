@@ -12,7 +12,7 @@
 }
 
 .review__text-box {
-  background-color: var(--slide-text-color);
+  background-color: #fafafa;
   padding: 47px 50px 30px 50px;
 
   @media screen and (min-width: 768px) {
@@ -29,19 +29,19 @@
 }
 .review__text {
   position: relative;
-  z-index: 2;
-  padding: 5px 16px 20px 7px;
+  padding: 0px 16px 20px 7px;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
   text-align: center;
   letter-spacing: 0.04em;
+
   background-image: repeating-linear-gradient(
     to bottom,
-    var(--slide-text-color),
-    var(--slide-text-color) 30px,
+    #fafafa,
+    #fafafa 30px,
     var(--pseudo-color) 30px,
-    var(--pseudo-color) 31px // var(--slide-text-color) 31px,
+    var(--pseudo-color) 31px // #fafafa 31px,
   );
 
   &::before {
@@ -51,18 +51,9 @@
     width: 54px;
     height: 40px;
     position: absolute;
-    z-index: -2;
     top: 0px;
     left: 0px;
-    transform: translate(-27%, -30%);
-
-    @media screen and(min-width: 768px) {
-      transform: translate(-25%, -37%);
-    }
-
-    @media screen and(min-width: 768px) {
-      transform: translate(-12%, -40%);
-    }
+    transform: translate(-20%, -40%);
   }
 
   @media screen and (min-width: 768px) {

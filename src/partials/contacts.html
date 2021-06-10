@@ -7,13 +7,12 @@
         <div class="contacts-set__subsection">
           <h3 class="contacts-set__title">Chicago</h3>
           <p class="contacts-set__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
-        <div class="contacts-list">
-          <h4 class="contacts-list__title">Monday - Friday</h4>
-          <p class="contacts-list__text">06:00 AM - 10:00 PM</p>
-          <h4 class="contacts-list__title">Saturday - Sunday</h4>
-          <p class="contacts-list__text">08:00 AM - 16:00 PM</p>
-        </div>
+          <div class="contacts-list">
+            <h4 class="contacts-list__title">Monday - Friday</h4>
+            <p class="contacts-list__text">06:00 AM - 10:00 PM</p>
+            <h4 class="contacts-list__title">Saturday - Sunday</h4>
+            <p class="contacts-list__text">08:00 AM - 16:00 PM</p>
+          </div>
         <div>
           <address class="contacts-address">
             <a class="contacts-address__link" href="tel:+610383766284">+61(0) 383 766 284</a>
@@ -66,40 +65,19 @@
         </div>
       </li>
     </ul>
-    <ul class="contacts-button">
-      <li class="contacts-button__item">
-        <button class="btn btn--dark contacts-button__btn" type="button" data-modal-open-map>
-          Our Locations
-          <svg class="contacts-button--light">
-            <use href="./images/icons-sprite.svg#icon-vector-next"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="contacts-button__item">
-        <button class="btn btn--light contacts-button__btn" type="button">
-          Franchise
-          <svg class="contacts-button--dark">
-            <use href="./images/icons-sprite.svg#icon-next"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+    <div class="contacts-button">
+      <button class="btn btn--dark contacts-button__btn" type="button">
+        Our Locations
+        <svg class="contacts-button--light">
+          <use href="./images/icons-sprite.svg#icon-vector-next"></use>
+        </svg>
+      </button>
+      <button class="btn btn--light contacts-button__btn" type="button">
+        Franchise
+        <svg class="contacts-button--dark">
+          <use href="./images/icons-sprite.svg#icon-next"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
-<div class="overlay is-hidden-map" data-modal-map>
-  <div class="modal-location">
-    <iframe
-      class="modal-location__iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1588.2188910143311!2d-76.5121228816354!3d37.237319383847996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc03583bd26c5203f!2zQmVuICYgSmVycnnigJlz!5e0!3m2!1sru!2sua!4v1623220946789!5m2!1sru!2sua"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-    >
-    </iframe>
-    <button class="modal-location__res" data-modal-close-map>
-      <svg class="" width="30" height="30">
-        <use href="./images/defs.svg#icon-close_40"></use>
-      </svg>
-    </button>
-  </div>
-</div>

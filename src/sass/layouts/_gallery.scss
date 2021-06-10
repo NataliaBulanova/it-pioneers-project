@@ -109,8 +109,8 @@
 
   &:hover,
   &:focus {
-    box-shadow: var(--gallery-shadow);
-    transform: rotate(360deg) scale(1.5);
+    box-shadow: 1px 1px 20px 10px rgba(255, 184, 202, 0.6);
+    transform: rotate(350deg) scale(1.5);
 
     //   350 Поставил специально, так кажется симпотичнее
     //   И тень тоже с потолка)))
