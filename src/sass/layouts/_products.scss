@@ -265,9 +265,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.56;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.76;
   letter-spacing: 0.03em;
   color: var(--comment-text-color);
   background: var(--secondary-bg-color);
@@ -275,7 +275,12 @@
   transform: translateY(100%);
   transition: var(--modal-tr-param);
   overflow: hidden;
-  padding: 50px 20px;
+  padding: 30px 20px;
+
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 
   .products__link:hover & {
     transform: translateY(0);

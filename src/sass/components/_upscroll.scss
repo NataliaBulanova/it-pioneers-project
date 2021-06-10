@@ -1,0 +1,29 @@
+#top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
+.upscroll__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--light-accent-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--dark-btn-hover);
+
+    & .upscrolle__icon {
+      fill: var(--white-text-color);
+    }
+  }
+}
+.upscrolle__icon {
+  width: 70px;
+  height: 30px;
+  fill: var(--dark-accent-color);
+}
