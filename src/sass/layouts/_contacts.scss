@@ -273,13 +273,14 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill var(--modal-tr-param);
-  background-color: var(--menu-bg-color);
+  background-color: var(--primary-bg-color);
   fill: var(--dark-accent-color);
-  transition: fill var(--modal-tr-param);
+  transition: var(--modal-tr-param);
 
   &:focus,
   &:hover {
-    fill: var(--menu-border-color);
+    fill: var(--white-text-color);
+    background-color: var(--upscroll-btn-color);
   }
 
   @media screen and (min-width: 768px) {
