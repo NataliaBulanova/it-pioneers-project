@@ -12,6 +12,10 @@ body {
   &.modal-open {
     overflow: hidden;
   }
+
+  &.modal-open-map {
+    overflow: hidden;
+  }
 }
 
 *,
