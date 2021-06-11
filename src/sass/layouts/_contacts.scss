@@ -321,6 +321,10 @@
   padding: 40px 30px;
   background-color: var(--menu-bg-color);
 
+  @media screen and (max-height: 600px) {
+    overflow-y: scroll;
+  }
+
   @media screen and (min-width: 768px) {
     width: 500px;
   }
