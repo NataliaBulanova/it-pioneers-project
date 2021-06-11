@@ -33,3 +33,19 @@
         refsMap.modal.classList.toggle('is-hidden-map');
     }
 }
+
+{
+    const refsFran = {
+        openModalBtn: document.querySelector('[data-modal-open-fran]'),
+        closeModalBtn: document.querySelector('[data-modal-close-fran]'),
+        modal: document.querySelector('[data-modal-fran]'),
+    };
+
+    refsFran.openModalBtn.addEventListener('click', toggleModal);
+    refsFran.closeModalBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+        document.body.classList.toggle("modal-open-fran");
+        refsFran.modal.classList.toggle('is-hidden-fran');
+    }
+}
